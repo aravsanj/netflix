@@ -1,0 +1,267 @@
+:root {
+  --netflix-red: #e50914;
+  --netflix-bg: #00081d;
+}
+
+@font-face {
+  font-family: NetflixSans;
+  src: url("Fonts/NetflixSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NetflixSans;
+  font-weight: light;
+  src: url("Fonts/NetflixSans-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NetflixSans;
+  font-weight: medium;
+  src: url("Fonts/NetflixSans-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NetflixSans;
+  font-weight: bold;
+  src: url("Fonts/NetflixSans-Bold.otf") format("opentype");
+}
+
+body {
+  font-family: NetflixSans;
+  background-color: var(--netflix-bg);
+  color: white;
+  padding: 10px 48px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .nav-right {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.navbar select {
+  font-size: 1rem;
+  padding: 10px 12px;
+  padding-left: 30px;
+  background-color: var(--netflix-bg);
+  color: white;
+  border: 1 white;
+}
+
+.navbar select option {
+  margin-left: 2rem;
+}
+
+.navbar button {
+  background-color: var(--netflix-red);
+  color: white;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.hero {
+  background-image: linear-gradient(
+      65.68deg,
+      rgba(0, 8, 29, 0.6) 9.51%,
+      rgba(53, 13, 49, 0.6) 72.89%,
+      rgba(132, 5, 25, 0.6) 101.01%
+    ),
+    linear-gradient(
+      102.21deg,
+      rgba(0, 0, 0, 0.04) 16.09%,
+      rgba(1, 1, 1, 0.17) 39.27%,
+      rgba(1, 1, 1, 0.24) 64.25%,
+      rgba(4, 4, 4, 0.8) 96.63%
+    ),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/ceb3b1eb-2673-4dd9-a6e3-0cd7a5e130ee/7540883d-de7a-4a69-8cc6-c3885d3a2b0b/IN-en-20230522-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  border-radius: 10px;
+  padding: 94px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+  line-height: 6.25rem;
+  font-weight: bold;
+  width: 820px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  font-weight: medium;
+}
+
+.hero h3 {
+  font-size: 1.25rem;
+}
+
+.get-started input {
+  background-color: transparent;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  outline: 0.2px rgba(255, 255, 255, 0.541) solid;
+}
+
+.get-started button {
+  background-color: var(--netflix-red);
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    146.51deg,
+    rgba(0, 8, 29, 0.75) 0%,
+    rgba(53, 13, 49, 0.6) 80.34%,
+    rgba(132, 5, 25, 0.6) 110.79%
+  );
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  border-bottom: 8px solid rgba(255, 255, 255, 0.1);
+}
+
+.box:last-child {
+  border: 0;
+}
+
+.box:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text p {
+  font-size: 1.3rem;
+  width: 800px;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin: 0 120px;
+  margin-bottom: 40px;
+}
+
+.container-2 p {
+  font-size: 1.2rem;
+}
+
+.container-2 h1 {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+
+.faq {
+  width: 100%;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.faq-item {
+  background-color: #132144;
+  font-size: 1.5rem;
+  padding: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  margin: 0 120px;
+  color: #ffffffb3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-bottom: 50px;
+  font-weight: light;
+}
+
+footer .phone {
+  color: #ffffffb3;
+}
+
+footer .list-container {
+  display: flex;
+  column-gap: 20rem;
+}
+
+footer .list-container ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.select-container {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+footer select {
+  font-size: 1rem;
+  padding: 10px 12px;
+  padding-left: 30px;
+  background-color: var(--netflix-bg);
+  color: white;
+  border: 1 white;
+}
+
+footer select option {
+  margin-left: 2rem;
+}
+
+footer button {
+  background-color: var(--netflix-red);
+  color: white;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.icon {
+  color: white;
+  font-family: "FontAwesome";
+  font-size: 1rem;
+  margin-right: -35px;
+  z-index: 1000;
+}
