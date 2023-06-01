@@ -235,10 +235,6 @@ body {
   display: none;
 }
 
-.faq-item-container .faq-ans {
-  transition: all 1s ease-in-out;
-}
-
 .faq-item-container.active .faq-ans  {
   display: block;
 }
