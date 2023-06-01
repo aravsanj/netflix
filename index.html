@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/images/icon.png" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
@@ -15,6 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -36,7 +37,25 @@
       </h3>
       <div class="get-started">
         <input placeholder="Email address" type="text" />
-        <button>Get Started <i class="fa-sharp fa-solid fa-greater-than"></i></button>
+        <button>
+          Get Started
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="Hawkins-Icon Hawkins-Icon-Standard"
+            data-name="ChevronRight"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </button>
       </div>
     </div>
     <div class="container">
@@ -85,29 +104,88 @@
     <div class="container-2">
       <h1 class="faq">Frequently Asked Questions</h1>
       <div class="faq-container">
-        <div class="faq-item">
-          <span>What is Netflix?</span
-          ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+        <div class="faq-item-container">
+          <div class="faq-item">
+            <span>What is Netflix?</span
+            ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <div class="faq-ans">
+            Netflix is a streaming service that offers a wide variety of
+            award-winning TV shows, movies, anime, documentaries and more – on
+            thousands of internet-connected devices.
+            <br />
+            <br />
+            You can watch as much as you want, whenever you want, without a
+            single ad – all for one low monthly price. There's always something
+            new to discover, and new TV shows and movies are added every week!
+          </div>
         </div>
-        <div class="faq-item">
-          <span>How much does Netflix cost?</span
-          ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+        <div class="faq-item-container">
+          <div class="faq-item">
+            <span>How much does Netflix cost?</span
+            ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <div class="faq-ans">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+            streaming device, all for one fixed monthly fee. Plans range from ₹
+            149 to ₹ 649 a month. No extra costs, no contracts.
+          </div>
         </div>
-        <div class="faq-item">
-          <span>Where can I watch?</span
-          ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+        <div class="faq-item-container">
+          <div class="faq-item">
+            <span>Where can I watch?</span
+            ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <div class="faq-ans">
+            Watch anywhere, anytime. Sign in with your Netflix account to watch
+            instantly on the web at netflix.com from your personal computer or
+            on any internet-connected device that offers the Netflix app,
+            including smart TVs, smartphones, tablets, streaming media players
+            and game consoles.
+            <br />
+            <br />
+            You can also download your favourite shows with the iOS, Android, or
+            Windows 10 app. Use downloads to watch while you're on the go and
+            without an internet connection. Take Netflix with you anywhere.
+          </div>
         </div>
-        <div class="faq-item">
-          <span>How do I cancel?</span
-          ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+        <div class="faq-item-container">
+          <div class="faq-item">
+            <span>How do I cancel?</span
+            ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <div class="faq-ans">
+            Netflix is flexible. There are no annoying contracts and no
+            commitments. You can easily cancel your account online in two
+            clicks. There are no cancellation fees – start or stop your account
+            anytime.
+          </div>
         </div>
-        <div class="faq-item">
-          <span>What can I watch on Netflix?</span
-          ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+        <div class="faq-item-container">
+          <div class="faq-item">
+            <span>What can I watch on Netflix?</span
+            ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <div class="faq-ans">
+            Netflix has an extensive library of feature films, documentaries, TV
+            shows, anime, award-winning Netflix originals, and more. Watch as
+            much as you want, anytime you want.
+          </div>
         </div>
-        <div class="faq-item">
-          <span>Is Netflix good for kids?</span
-          ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+        <div class="faq-item-container">
+          <div class="faq-item">
+            <span>Is Netflix good for kids?</span
+            ><i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <div class="faq-ans">
+            The Netflix Kids experience is included in your membership to give
+            parents control while kids enjoy family-friendly TV shows and films
+            in their own space.
+            <br />
+            Kids profiles come with PIN-protected parental controls that let you
+            restrict the maturity rating of content kids can watch and block
+            specific titles you don’t want kids to see.
+          </div>
         </div>
       </div>
       <p>
@@ -115,12 +193,35 @@
       </p>
       <div class="get-started">
         <input placeholder="Email address" type="text" />
-        <button>Get Started <i class="fa-sharp fa-solid fa-greater-than"></i></button>
+        <button>
+          Get Started
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="Hawkins-Icon Hawkins-Icon-Standard"
+            data-name="ChevronRight"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </button>
       </div>
     </div>
 
     <footer>
-      <span>Questions? <a class="phone" href="tel:000-800-919-1694">Call 000-800-919-1694</a></span>
+      <span
+        >Questions?
+        <a class="phone" href="tel:000-800-919-1694"
+          >Call 000-800-919-1694</a
+        ></span
+      >
       <div class="list-container">
         <ul>
           <li><a>FAQ</a></li>

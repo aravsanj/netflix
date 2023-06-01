@@ -1,6 +1,8 @@
 :root {
   --netflix-red: #e50914;
   --netflix-bg: #00081d;
+  --netflix-bg-2: #132144;
+
 }
 
 @font-face {
@@ -47,8 +49,9 @@ body {
 
 .navbar select {
   font-size: 1rem;
-  padding: 10px 12px;
+  padding: 8px 0;
   padding-left: 30px;
+  width: 120px;
   background-color: var(--netflix-bg);
   color: white;
   border: 1 white;
@@ -61,7 +64,7 @@ body {
 .navbar button {
   background-color: var(--netflix-red);
   color: white;
-  padding: 10px 12px;
+  padding: 10px 20px;
   border: 0;
   border-radius: 4px;
 }
@@ -104,9 +107,15 @@ body {
   font-size: 1.25rem;
 }
 
+.get-started {
+  display: flex;
+  column-gap: 1rem;
+}
+
 .get-started input {
   background-color: transparent;
   padding: 1rem;
+  width: 300px;
   font-size: 1rem;
   color: white;
   border: 0;
@@ -118,8 +127,11 @@ body {
   background-color: var(--netflix-red);
   padding: 1rem;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: 0;
 }
 
 .container {
@@ -194,12 +206,41 @@ body {
   row-gap: 0.5rem;
 }
 
+.faq-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 .faq-item {
-  background-color: #132144;
+  background-color: var(--netflix-bg-2);
   font-size: 1.5rem;
   padding: 1.8rem;
   display: flex;
   justify-content: space-between;
+}
+
+.faq-item:hover {
+  background-color: #223362;
+  cursor: pointer;
+}
+
+.faq-ans {
+  margin-top: 1px;
+  background-color: var(--netflix-bg-2);
+  font-size: 1.5rem;
+  padding: 1.8rem;
+  font-weight: light;
+  display: none;
+}
+
+.faq-item-container .faq-ans {
+  transition: all 1s ease-in-out;
+}
+
+.faq-item-container.active .faq-ans  {
+  display: block;
 }
 
 footer {
